@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body id="body" >
+    <button onclick="togglePopUp()" >afficher la Pop up</button>
+    <div id="popup1"  class="popup">
+            <div class="header" >S'ABONNER AUX NEWSLETTER</div>
+            <div class="blue" >Profitez des nouveautés et conseils personnalisés Mollat!</div>
+            <form>
+                <label class="title" >Votre adresse mail</label>
+                <input class="mail" type="mail" placeholder="jean.dupont@gmail.com">
+            </form>
+            <form style="display: flex; justify-content: flex-start;  " >
+                <input class="checkbox"  type="checkbox">
+                <div style="text-align: left; margin-left: 1.5px; " >
+                <label class="title" >Newsletter Mollat:</label>
+            <div style="font-size: 14px;"  >Lettre hebdomadaire de l’actualité de la librairie : nouveautés, conférences et animations, dossiers, actualités du livre...</div>
+            </div>
+            </form>
+            <div class="title">
+                Par quel(s) rayons(s) Mollat êtes-vous intéressé ?
+                <ul>
+                    <li  onclick="toggleClassStyle('litterature')" id='litterature' >Litterature</li>
+                    <li onclick="toggleClassStyle('Scienses')" id='Scienses'>Scienses Humaines</li>
+                    <li  onclick="toggleClassStyle('Fantaisie')" id='Fantaisie'>Fantaisie</li>
+                    <li  onclick="toggleClassStyle('Bandes')" id='Bandes'>Bandes Dessinées</li>
+                    <li  onclick="toggleClassStyle('Art')" id='Art'>Art</li>
+                    <li  onclick="toggleClassStyle('Science')" id='Science'>Science - Savoir</li>
+                    <li  onclick="toggleClassStyle('Economie')" id='Economie'>Economie - Droit</li>
+                    <li  onclick="toggleClassStyle('loisir')" id='loisir'>Loisir - Vie Pratique</li>
+                </ul>
+            </div>
+            <form style="display: flex; justify-content: flex-start;  " >
+                <input class="checkbox" type="checkbox">
+                <div style="text-align: left; margin-left: 1.5px; " >
+                <label class="title">Newsletter events :</label>
+            <div style="font-size: 14px;"  >Recevez le bon plan de nos events</div>
+            </div>
+            </form>
+            <form style="display: flex; justify-content: flex-start;  " >
+                <input class="checkbox" type="checkbox">
+                <div style="text-align: left; margin-left: 1.5px; " >
+                <label class="title">Newsletter partenaires:</label>
+            <div style="font-size: 14px;"  >Recevez le bon plan de nos partenaires</div>
+            </div>
+            </form>
+            <div style="font-size: 12px;" class="blue" >
+                En validant votre inscription, vous acceptez que Mollat mémoris et utilise votre adresse Mail
+            </div>
+    
+            <button onclick="changePage()" > Je m'inscris </button>
+        <div>
+        </div>
+    </div>
+    <div id="popup2" class="disabled popup " > 
+        <div class="header" >S'ABONNER AUX NEWSLETTER</div>
+        <div> 
+        <img src="crayon.svg">
+        <div class="blue" >Merci !</div>
+        <div class="title" > Vous êtes bien inscrit(e) à la Newsletter de Mollat.</div>
+            <div>À très bientôt dans notre boutique ou sur notre site web.</div>
+        <div  onclick="togglePopUp('pageTwo')"  class="blue" style="text-decoration: underline;"  >Retour</div>
+    </div>  
+    </div>
+    </div>
+    
+        <script src="main.js"> </script>
+</body>
+</html>

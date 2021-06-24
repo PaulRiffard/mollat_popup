@@ -1,0 +1,106 @@
+@import url("https://use.typekit.net/jej0nju.css");
+
+div{
+    width: 100%;
+}
+
+.popup{
+    font-family: "sofia-pro",sans-serif; 
+    position: absolute;
+    width: 25%;
+    min-width: 45vh;
+    right: 40px;
+    bottom: 25px ;
+    margin:0;
+    padding: 10px;
+    background-color: teal;
+    height: 60vh;
+    overflow-y: scroll;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(135, 135, 135, 0.15);
+}
+
+
+.blue{
+    color: #001689;
+}
+
+.header{
+    background-color: #001689;
+    position: sticky;
+    top:0 ;
+    width: 100%;
+    padding: 5px; 
+
+   
+    color: white
+}
+
+.title{
+    font-weight: bold;
+}
+
+.mail{
+    background: #F2F3F7;
+    border: 1px solid #001689;
+    width: 80%;
+}
+
+.checkbox{
+    margin-right: 5px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+margin: 5px;
+padding: 2px 10px;
+color: #28B89F;
+border: solid 1px #28B89F;
+border-radius: 100px;
+}
+
+.li_selected{
+    color: white;
+    border: 0px;
+    background-color: #28B89F ;
+}
+
+
+
+
+button{
+    margin: 10px;
+    padding: 5px;
+    width: 80%;
+    background-color: #001689;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: none;
+}
+
+
+.disabled{
+    display: none;
+}
+
+.body_disabled{
+    background-color: #73839C ;
+}
+
+img{
+    width:45%
+}
